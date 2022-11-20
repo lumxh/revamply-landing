@@ -306,6 +306,10 @@ section .covered {
   justify-content: space-between;
 }
 
+section .covered .covered-quote-mobile {
+  display: none;
+}
+
 section .covered .covered-quotes {
   width: 50%;
 }
@@ -353,20 +357,6 @@ section
   position: absolute;
   top: 140px;
   left: 150px;
-}
-
-section
-  .covered
-  .covered-quotes
-  .covered-quotes-quote
-  .covered-quotes-quote-wrapper
-  p {
-  font-family: SpaceGroteskRegular;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19.6644px;
-  line-height: 150%;
-  color: #3f3d3d;
 }
 
 section
@@ -1151,6 +1141,39 @@ footer .footer .footer-footer .footer-footer-right a:hover {
     display: none;
   }
 
+  section .covered .covered-quote-mobile {
+    display: block;
+    padding-top: 40px;
+    position: relative;
+    padding-bottom: 80px;
+  }
+
+  section .covered .covered-quote-mobile .covered-quote-mobile-wrapper {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+  }
+
+  section .covered .covered-quote-mobile p {
+    font-family: SpaceGroteskRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3f3d3d;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  section .covered .covered-quote-mobile span {
+    font-family: SpaceGroteskMedium;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #212121;
+  }
+
   section .covered .covered-list {
     width: 100%;
     margin: 0px;
@@ -1290,7 +1313,6 @@ footer .footer .footer-footer .footer-footer-right a:hover {
 
   section .contact-form .contact-form-submit {
     text-align: center;
-    /* padding: 8px 24px; */
     gap: 8px;
     background: #212121;
     border: 1px solid #212121;
