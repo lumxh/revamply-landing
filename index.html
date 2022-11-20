@@ -7,6 +7,11 @@
     <title>Revamply - Landing Page</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body>
     <!-- Header Area-->
@@ -17,10 +22,21 @@
           <div class="header-logo">
             <img src="./assets/images/revamply.svg" alt="revamply-logo" />
           </div>
+          <div class="header-logo-mobile">
+            <img
+              src="./assets/images/revamply-mobile.svg"
+              alt="revamply-logo"
+            />
+          </div>
           <!-- Schedule Consultation -->
           <div class="header-schedule">
             <a href="#calendly">Schedule Consultation</a>
             <img src="./assets/images/arrow-right.svg" alt="right-arrow" />
+          </div>
+          <div class="header-phone-schedule">
+            <a href="#calendly">
+              <img src="./assets/images/phone.svg" alt="phone" />
+            </a>
           </div>
         </div>
       </div>
@@ -83,7 +99,16 @@
             </p>
           </div>
           <div class="innovate-image">
-            <img src="./assets/images/success.png" alt="success" />
+            <img
+              src="./assets/images/success.png"
+              alt="success"
+              id="success-pic"
+            />
+            <img
+              src="./assets/images/success-mobile.svg"
+              alt="success"
+              id="success-pic-mobile"
+            />
           </div>
         </div>
       </div>
@@ -100,7 +125,16 @@
           data-aos-easing="ease-in-out"
         >
           <div class="elevate-image">
-            <img src="./assets/images/elevate.png" alt="elevate" />
+            <img
+              src="./assets/images/elevate-mobile.svg"
+              alt="elevate"
+              id="elevate-pic-mobile"
+            />
+            <img
+              src="./assets/images/elevate.png"
+              alt="elevate"
+              id="elevate-pic"
+            />
           </div>
           <div class="elevate-text">
             <p class="elevate-text-header">Elevate Your Game</p>
@@ -135,7 +169,16 @@
             </p>
           </div>
           <div class="strategy-image">
-            <img src="./assets/images/strategy.png" alt="strategy" />
+            <img
+              src="./assets/images/strategy.png"
+              alt="strategy"
+              id="strategy-pic"
+            />
+            <img
+              src="./assets/images/strategy-mobile.svg"
+              alt="strategy"
+              id="strategy-pic-mobile"
+            />
           </div>
         </div>
       </div>
@@ -342,7 +385,9 @@
               </div>
             </div>
           </div>
-          <button class="contact-form-submit">Send Inquiry</button>
+          <button class="contact-form-submit" id="contact-form-submit">
+            Send Inquiry
+          </button>
         </div>
       </div>
     </section>
@@ -378,7 +423,7 @@
     <!-- Footer Area -->
     <footer>
       <div class="container">
-        <div class="footer">
+        <div class="footer" id="footer">
           <div class="footer-header">
             <div class="footer-header-left">
               <p class="footer-header-left-header">Vienna Holdings</p>
@@ -435,9 +480,59 @@
         </div>
       </div>
     </footer>
+
+    <!-- Footer Mobile Area -->
+    <footer>
+      <div class="container">
+        <div class="footer-mobile" id="footer-mobile">
+          <p class="footer-mobile-header">Vienna Holdings Company</p>
+          <p class="footer-mobile-locations">Our Locations</p>
+          <ul class="footer-mobile-locations-list">
+            <li>
+              <img src="./assets/images/usa.svg" alt="indonesia" />
+              <span>Buffalo, Wyoming, USA</span>
+            </li>
+            <li>
+              <img src="./assets/images/usa.svg" alt="indonesia" />
+              <span>Austin, Texas</span>
+            </li>
+            <li>
+              <img src="./assets/images/britain.svg" alt="indonesia" />
+              <span>London, UK</span>
+            </li>
+            <li>
+              <img src="./assets/images/kosovo.svg" alt="indonesia" />
+              <span>Pristine, Kosovo</span>
+            </li>
+            <li>
+              <img src="./assets/images/kosovo.svg" alt="indonesia" />
+              <span>Jakarta, Indonesia</span>
+            </li>
+          </ul>
+          <img src="./assets/images/mobile-divider.svg" alt="mobile-divider" />
+          <div class="footer-mobile-socials">
+            <img src="./assets/images/facebook.svg" alt="facebook" />
+            <img src="./assets/images/twitter.svg" alt="twitter" />
+            <img src="./assets/images/instagram.svg" alt="instagram" />
+          </div>
+          <p class="footer-copyright">
+            Copyright © 2022. Revamply. All rights reserved.
+          </p>
+          <div class="footer-privacy-terms">
+            <a>Terms & Conditions</a>
+            <a>Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+  ></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <script src="./js/index.js"></script>
 </html>
