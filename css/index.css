@@ -158,6 +158,11 @@ section .hero .hero-video {
   justify-content: end;
 }
 
+section .hero .hero-video video {
+  width: 100%;
+  height: auto;
+}
+
 section .horizontal-line {
   border: 1px solid #d8d8d8;
   margin-top: 155px;
