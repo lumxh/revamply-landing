@@ -14,11 +14,9 @@ document.getElementById("contact-form-submit").addEventListener("click", () => {
     success = false;
 
   Toastify({
-    text: success
-      ? `Thank you. We'll reach out shortly!`
-      : "Please fill all the data!",
+    text: success ? `Thank you for reaching out!` : "Please fill all the data!",
     duration: 2500,
-    destination: "https://github.com/apvarun/toastify-js",
+    destination: "https://www.revamply.io",
     newWindow: true,
     gravity: "top", // `top` or `bottom`
     position: "right", // `left`, `center` or `right`
@@ -36,6 +34,12 @@ document.getElementById("contact-form-submit").addEventListener("click", () => {
   }).showToast();
 
   if (success) {
+    const subject = "Revamply Inquiry!";
+    const message = `Email:${email.value}.%0D%0ACompany Name: ${companyName.value}.%0D%0AFull Name: ${fullName.value}.%0D%0ACellphone: ${cellphone.value}.`;
+
+    const ourMail = "revamply@gmail.com";
+    window.location.href = `mailto:${ourMail}?subject=${subject}&body=${message}`;
+
     email.value = "";
     companyName.value = "";
     fullName.value = "";
